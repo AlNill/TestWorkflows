@@ -2,7 +2,8 @@ name: Run as self-hosted
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: 
   push:
-    - feature_simple_workflow
+    branches:
+      - feature_simple_workflow
 jobs:
   Explore-GitHub-Actions:
     runs-on: self-hosted
